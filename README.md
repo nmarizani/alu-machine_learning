@@ -18,9 +18,11 @@ Stacked Bar Graph: Represented the number of fruits owned by individuals.
 Requirements
 
 Python 3
+
 Libraries: numpy, matplotlib, scikit-learn (for PCA)
 
 How to Run
 
 Place the required files in the same directory.
+
 Run each script with Python 3.
