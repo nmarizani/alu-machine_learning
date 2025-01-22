@@ -4,7 +4,7 @@ This module defines a function for concatenating two 2D matrices along
 a specific axis.
 
 Functions:
-    - cat_matrices2D(mat1, mat2, axis=0): Concatenates two 
+    - cat_matrices2D(mat1, mat2, axis=0): Concatenates two
     2D matrices along a specified axis.
 """
 
@@ -15,11 +15,11 @@ def cat_matrices2D(mat1, mat2, axis=0):
     Args:
         mat1 (list of list of int/float): The first 2D matrix.
         mat2 (list of list of int/float): The second 2D matrix.
-        axis (int): The axis along which to concatenate 
+        axis (int): The axis along which to concatenate
         (0 for rows, 1 for columns).
 
     Returns:
-        list of list of int/float: A new 2D matrix with mat1 and mat2 
+        list of list of int/float: A new 2D matrix with mat1 and mat2
         concatenated along the specified axis.
         None: If the matrices cannot be concatenated.
     """
