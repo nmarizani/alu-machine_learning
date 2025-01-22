@@ -1,0 +1,603 @@
+[
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "Axes3D",
+        "importPath": "mpl_toolkits.mplot3d",
+        "description": "mpl_toolkits.mplot3d",
+        "isExtraImport": true,
+        "detail": "mpl_toolkits.mplot3d",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "math.linear_algebra.0-slice_me_up",
+        "description": "math.linear_algebra.0-slice_me_up",
+        "peekOfCode": "arr = [9, 8, 2, 3, 9, 4, 1, 0, 3]\narr1 = arr[:2]  # First two numbers\narr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.0-slice_me_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.0-slice_me_up",
+        "description": "math.linear_algebra.0-slice_me_up",
+        "peekOfCode": "arr1 = arr[:2]  # First two numbers\narr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.0-slice_me_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.0-slice_me_up",
+        "description": "math.linear_algebra.0-slice_me_up",
+        "peekOfCode": "arr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.0-slice_me_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.0-slice_me_up",
+        "description": "math.linear_algebra.0-slice_me_up",
+        "peekOfCode": "arr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.0-slice_me_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "math.linear_algebra.14-saddle_up",
+        "description": "math.linear_algebra.14-saddle_up",
+        "peekOfCode": "arr = [9, 8, 2, 3, 9, 4, 1, 0, 3]\narr1 = arr[:2]  # First two numbers\narr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.14-saddle_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "math.linear_algebra.14-saddle_up",
+        "description": "math.linear_algebra.14-saddle_up",
+        "peekOfCode": "arr1 = arr[:2]  # First two numbers\narr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.14-saddle_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "math.linear_algebra.14-saddle_up",
+        "description": "math.linear_algebra.14-saddle_up",
+        "peekOfCode": "arr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.14-saddle_up",
+        "documentation": {}
+    },
+    {
+        "label": "arr3",
+        "kind": 5,
+        "importPath": "math.linear_algebra.14-saddle_up",
+        "description": "math.linear_algebra.14-saddle_up",
+        "peekOfCode": "arr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
+        "detail": "math.linear_algebra.14-saddle_up",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "math.plotting.0-line",
+        "description": "math.plotting.0-line",
+        "peekOfCode": "y = np.arange(0, 11) ** 3\n# Define the x values to match the range of y\nx = np.arange(0, 11)\n# Plot the line graph\nplt.plot(x, y, 'r-', label='y = x^3')  # 'r-' indicates a red solid line\n# Add labels and title for clarity\nplt.xlabel(\"x-axis\")\nplt.ylabel(\"y-axis\")\nplt.title(\"Plot of y = x^3\")\n# Optional: Add a legend",
+        "detail": "math.plotting.0-line",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "math.plotting.0-line",
+        "description": "math.plotting.0-line",
+        "peekOfCode": "x = np.arange(0, 11)\n# Plot the line graph\nplt.plot(x, y, 'r-', label='y = x^3')  # 'r-' indicates a red solid line\n# Add labels and title for clarity\nplt.xlabel(\"x-axis\")\nplt.ylabel(\"y-axis\")\nplt.title(\"Plot of y = x^3\")\n# Optional: Add a legend\nplt.legend()\n# Display the graph",
+        "detail": "math.plotting.0-line",
+        "documentation": {}
+    },
+    {
+        "label": "mean",
+        "kind": 5,
+        "importPath": "math.plotting.1-scatter",
+        "description": "math.plotting.1-scatter",
+        "peekOfCode": "mean = [69, 0]\ncov = [[15, 8], [8, 15]]\nnp.random.seed(5)\nx, y = np.random.multivariate_normal(mean, cov, 2000).T\ny += 180\n# Plot the scatter plot\nplt.scatter(x, y, color='magenta', label=\"Men's data\")\n# Label the axes\nplt.xlabel(\"Height (in)\")\nplt.ylabel(\"Weight (lbs)\")",
+        "detail": "math.plotting.1-scatter",
+        "documentation": {}
+    },
+    {
+        "label": "cov",
+        "kind": 5,
+        "importPath": "math.plotting.1-scatter",
+        "description": "math.plotting.1-scatter",
+        "peekOfCode": "cov = [[15, 8], [8, 15]]\nnp.random.seed(5)\nx, y = np.random.multivariate_normal(mean, cov, 2000).T\ny += 180\n# Plot the scatter plot\nplt.scatter(x, y, color='magenta', label=\"Men's data\")\n# Label the axes\nplt.xlabel(\"Height (in)\")\nplt.ylabel(\"Weight (lbs)\")\n# Add a title",
+        "detail": "math.plotting.1-scatter",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "math.plotting.100-gradient",
+        "description": "math.plotting.100-gradient",
+        "peekOfCode": "x = np.random.randn(2000) * 10\ny = np.random.randn(2000) * 10\nz = np.random.rand(2000) + 40 - np.sqrt(np.square(x) + np.square(y))\n# Create the scatter plot\nscatter = plt.scatter(x, y, c=z, cmap='viridis')\n# Add a colorbar to represent elevation\ncbar = plt.colorbar(scatter)\ncbar.set_label(\"Elevation (m)\")\n# Label the axes\nplt.xlabel(\"x coordinate (m)\")",
+        "detail": "math.plotting.100-gradient",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "math.plotting.100-gradient",
+        "description": "math.plotting.100-gradient",
+        "peekOfCode": "y = np.random.randn(2000) * 10\nz = np.random.rand(2000) + 40 - np.sqrt(np.square(x) + np.square(y))\n# Create the scatter plot\nscatter = plt.scatter(x, y, c=z, cmap='viridis')\n# Add a colorbar to represent elevation\ncbar = plt.colorbar(scatter)\ncbar.set_label(\"Elevation (m)\")\n# Label the axes\nplt.xlabel(\"x coordinate (m)\")\nplt.ylabel(\"y coordinate (m)\")",
+        "detail": "math.plotting.100-gradient",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "math.plotting.100-gradient",
+        "description": "math.plotting.100-gradient",
+        "peekOfCode": "z = np.random.rand(2000) + 40 - np.sqrt(np.square(x) + np.square(y))\n# Create the scatter plot\nscatter = plt.scatter(x, y, c=z, cmap='viridis')\n# Add a colorbar to represent elevation\ncbar = plt.colorbar(scatter)\ncbar.set_label(\"Elevation (m)\")\n# Label the axes\nplt.xlabel(\"x coordinate (m)\")\nplt.ylabel(\"y coordinate (m)\")\n# Add a title",
+        "detail": "math.plotting.100-gradient",
+        "documentation": {}
+    },
+    {
+        "label": "scatter",
+        "kind": 5,
+        "importPath": "math.plotting.100-gradient",
+        "description": "math.plotting.100-gradient",
+        "peekOfCode": "scatter = plt.scatter(x, y, c=z, cmap='viridis')\n# Add a colorbar to represent elevation\ncbar = plt.colorbar(scatter)\ncbar.set_label(\"Elevation (m)\")\n# Label the axes\nplt.xlabel(\"x coordinate (m)\")\nplt.ylabel(\"y coordinate (m)\")\n# Add a title\nplt.title(\"Mountain Elevation\")\n# Display the plot",
+        "detail": "math.plotting.100-gradient",
+        "documentation": {}
+    },
+    {
+        "label": "cbar",
+        "kind": 5,
+        "importPath": "math.plotting.100-gradient",
+        "description": "math.plotting.100-gradient",
+        "peekOfCode": "cbar = plt.colorbar(scatter)\ncbar.set_label(\"Elevation (m)\")\n# Label the axes\nplt.xlabel(\"x coordinate (m)\")\nplt.ylabel(\"y coordinate (m)\")\n# Add a title\nplt.title(\"Mountain Elevation\")\n# Display the plot\nplt.show()",
+        "detail": "math.plotting.100-gradient",
+        "documentation": {}
+    },
+    {
+        "label": "lib",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "lib = np.load(\"pca.npz\")\ndata = lib[\"data\"]\nlabels = lib[\"labels\"]\ndata_means = np.mean(data, axis=0)\nnorm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# Create a 3D scatter plot\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "data = lib[\"data\"]\nlabels = lib[\"labels\"]\ndata_means = np.mean(data, axis=0)\nnorm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# Create a 3D scatter plot\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n# Scatter plot with different colors for each label",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "labels = lib[\"labels\"]\ndata_means = np.mean(data, axis=0)\nnorm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# Create a 3D scatter plot\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n# Scatter plot with different colors for each label\nfor label in np.unique(labels):",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "data_means",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "data_means = np.mean(data, axis=0)\nnorm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# Create a 3D scatter plot\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n# Scatter plot with different colors for each label\nfor label in np.unique(labels):\n    ax.scatter(",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "norm_data",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "norm_data = data - data_means\n_, _, Vh = np.linalg.svd(norm_data)\npca_data = np.matmul(norm_data, Vh[:3].T)\n# Create a 3D scatter plot\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n# Scatter plot with different colors for each label\nfor label in np.unique(labels):\n    ax.scatter(\n        pca_data[labels == label, 0],  # PCA dimension 1",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "pca_data",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "pca_data = np.matmul(norm_data, Vh[:3].T)\n# Create a 3D scatter plot\nfig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n# Scatter plot with different colors for each label\nfor label in np.unique(labels):\n    ax.scatter(\n        pca_data[labels == label, 0],  # PCA dimension 1\n        pca_data[labels == label, 1],  # PCA dimension 2\n        pca_data[labels == label, 2],  # PCA dimension 3",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "fig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\n# Scatter plot with different colors for each label\nfor label in np.unique(labels):\n    ax.scatter(\n        pca_data[labels == label, 0],  # PCA dimension 1\n        pca_data[labels == label, 1],  # PCA dimension 2\n        pca_data[labels == label, 2],  # PCA dimension 3\n        label=f\"Class {label}\"  # Label each class\n    )",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "math.plotting.101-pca",
+        "description": "math.plotting.101-pca",
+        "peekOfCode": "ax = fig.add_subplot(111, projection='3d')\n# Scatter plot with different colors for each label\nfor label in np.unique(labels):\n    ax.scatter(\n        pca_data[labels == label, 0],  # PCA dimension 1\n        pca_data[labels == label, 1],  # PCA dimension 2\n        pca_data[labels == label, 2],  # PCA dimension 3\n        label=f\"Class {label}\"  # Label each class\n    )\n# Add axis labels",
+        "detail": "math.plotting.101-pca",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "math.plotting.2-change_scale",
+        "description": "math.plotting.2-change_scale",
+        "peekOfCode": "x = np.arange(0, 28651, 5730)\nr = np.log(0.5)\nt = 5730\ny = np.exp((r / t) * x)\n# Plot the line graph\nplt.plot(x, y, label='C-14 Decay')\n# Label the axes\nplt.xlabel(\"Time (years)\")\nplt.ylabel(\"Fraction Remaining\")\n# Add a title",
+        "detail": "math.plotting.2-change_scale",
+        "documentation": {}
+    },
+    {
+        "label": "r",
+        "kind": 5,
+        "importPath": "math.plotting.2-change_scale",
+        "description": "math.plotting.2-change_scale",
+        "peekOfCode": "r = np.log(0.5)\nt = 5730\ny = np.exp((r / t) * x)\n# Plot the line graph\nplt.plot(x, y, label='C-14 Decay')\n# Label the axes\nplt.xlabel(\"Time (years)\")\nplt.ylabel(\"Fraction Remaining\")\n# Add a title\nplt.title(\"Exponential Decay of C-14\")",
+        "detail": "math.plotting.2-change_scale",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "math.plotting.2-change_scale",
+        "description": "math.plotting.2-change_scale",
+        "peekOfCode": "t = 5730\ny = np.exp((r / t) * x)\n# Plot the line graph\nplt.plot(x, y, label='C-14 Decay')\n# Label the axes\nplt.xlabel(\"Time (years)\")\nplt.ylabel(\"Fraction Remaining\")\n# Add a title\nplt.title(\"Exponential Decay of C-14\")\n# Set the y-axis to logarithmic scale",
+        "detail": "math.plotting.2-change_scale",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "math.plotting.2-change_scale",
+        "description": "math.plotting.2-change_scale",
+        "peekOfCode": "y = np.exp((r / t) * x)\n# Plot the line graph\nplt.plot(x, y, label='C-14 Decay')\n# Label the axes\nplt.xlabel(\"Time (years)\")\nplt.ylabel(\"Fraction Remaining\")\n# Add a title\nplt.title(\"Exponential Decay of C-14\")\n# Set the y-axis to logarithmic scale\nplt.yscale('log')",
+        "detail": "math.plotting.2-change_scale",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "math.plotting.3-two",
+        "description": "math.plotting.3-two",
+        "peekOfCode": "x = np.arange(0, 21000, 1000)\nr = np.log(0.5)\nt1 = 5730\nt2 = 1600\ny1 = np.exp((r / t1) * x)\ny2 = np.exp((r / t2) * x)\n# Plot y1 and y2\nplt.plot(x, y1, 'r--', label='C-14')  # Dashed red line for y1\nplt.plot(x, y2, 'g-', label='Ra-226')  # Solid green line for y2\n# Label the axes",
+        "detail": "math.plotting.3-two",
+        "documentation": {}
+    },
+    {
+        "label": "r",
+        "kind": 5,
+        "importPath": "math.plotting.3-two",
+        "description": "math.plotting.3-two",
+        "peekOfCode": "r = np.log(0.5)\nt1 = 5730\nt2 = 1600\ny1 = np.exp((r / t1) * x)\ny2 = np.exp((r / t2) * x)\n# Plot y1 and y2\nplt.plot(x, y1, 'r--', label='C-14')  # Dashed red line for y1\nplt.plot(x, y2, 'g-', label='Ra-226')  # Solid green line for y2\n# Label the axes\nplt.xlabel(\"Time (years)\")",
+        "detail": "math.plotting.3-two",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "math.plotting.3-two",
+        "description": "math.plotting.3-two",
+        "peekOfCode": "t1 = 5730\nt2 = 1600\ny1 = np.exp((r / t1) * x)\ny2 = np.exp((r / t2) * x)\n# Plot y1 and y2\nplt.plot(x, y1, 'r--', label='C-14')  # Dashed red line for y1\nplt.plot(x, y2, 'g-', label='Ra-226')  # Solid green line for y2\n# Label the axes\nplt.xlabel(\"Time (years)\")\nplt.ylabel(\"Fraction Remaining\")",
+        "detail": "math.plotting.3-two",
+        "documentation": {}
+    },
+    {
+        "label": "t2",
+        "kind": 5,
+        "importPath": "math.plotting.3-two",
+        "description": "math.plotting.3-two",
+        "peekOfCode": "t2 = 1600\ny1 = np.exp((r / t1) * x)\ny2 = np.exp((r / t2) * x)\n# Plot y1 and y2\nplt.plot(x, y1, 'r--', label='C-14')  # Dashed red line for y1\nplt.plot(x, y2, 'g-', label='Ra-226')  # Solid green line for y2\n# Label the axes\nplt.xlabel(\"Time (years)\")\nplt.ylabel(\"Fraction Remaining\")\n# Add a title",
+        "detail": "math.plotting.3-two",
+        "documentation": {}
+    },
+    {
+        "label": "y1",
+        "kind": 5,
+        "importPath": "math.plotting.3-two",
+        "description": "math.plotting.3-two",
+        "peekOfCode": "y1 = np.exp((r / t1) * x)\ny2 = np.exp((r / t2) * x)\n# Plot y1 and y2\nplt.plot(x, y1, 'r--', label='C-14')  # Dashed red line for y1\nplt.plot(x, y2, 'g-', label='Ra-226')  # Solid green line for y2\n# Label the axes\nplt.xlabel(\"Time (years)\")\nplt.ylabel(\"Fraction Remaining\")\n# Add a title\nplt.title(\"Exponential Decay of Radioactive Elements\")",
+        "detail": "math.plotting.3-two",
+        "documentation": {}
+    },
+    {
+        "label": "y2",
+        "kind": 5,
+        "importPath": "math.plotting.3-two",
+        "description": "math.plotting.3-two",
+        "peekOfCode": "y2 = np.exp((r / t2) * x)\n# Plot y1 and y2\nplt.plot(x, y1, 'r--', label='C-14')  # Dashed red line for y1\nplt.plot(x, y2, 'g-', label='Ra-226')  # Solid green line for y2\n# Label the axes\nplt.xlabel(\"Time (years)\")\nplt.ylabel(\"Fraction Remaining\")\n# Add a title\nplt.title(\"Exponential Decay of Radioactive Elements\")\n# Set the axis limits",
+        "detail": "math.plotting.3-two",
+        "documentation": {}
+    },
+    {
+        "label": "student_grades",
+        "kind": 5,
+        "importPath": "math.plotting.4-frequency",
+        "description": "math.plotting.4-frequency",
+        "peekOfCode": "student_grades = np.random.normal(68, 15, 50)\n# Plot the histogram\nplt.hist(student_grades, bins=range(0, 101, 10), edgecolor='black')\n# Label the axes\nplt.xlabel(\"Grades\")\nplt.ylabel(\"Number of Students\")\n# Add a title\nplt.title(\"Project A\")\n# Display the plot\nplt.show()",
+        "detail": "math.plotting.4-frequency",
+        "documentation": {}
+    },
+    {
+        "label": "y0",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "y0 = np.arange(0, 11) ** 3\nmean = [69, 0]\ncov = [[15, 8], [8, 15]]\nnp.random.seed(5)\nx1, y1 = np.random.multivariate_normal(mean, cov, 2000).T\ny1 += 180\nx2 = np.arange(0, 28651, 5730)\nr2 = np.log(0.5)\nt2 = 5730\ny2 = np.exp((r2 / t2) * x2)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "mean",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "mean = [69, 0]\ncov = [[15, 8], [8, 15]]\nnp.random.seed(5)\nx1, y1 = np.random.multivariate_normal(mean, cov, 2000).T\ny1 += 180\nx2 = np.arange(0, 28651, 5730)\nr2 = np.log(0.5)\nt2 = 5730\ny2 = np.exp((r2 / t2) * x2)\nx3 = np.arange(0, 21000, 1000)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "cov",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "cov = [[15, 8], [8, 15]]\nnp.random.seed(5)\nx1, y1 = np.random.multivariate_normal(mean, cov, 2000).T\ny1 += 180\nx2 = np.arange(0, 28651, 5730)\nr2 = np.log(0.5)\nt2 = 5730\ny2 = np.exp((r2 / t2) * x2)\nx3 = np.arange(0, 21000, 1000)\nr3 = np.log(0.5)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "x2",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "x2 = np.arange(0, 28651, 5730)\nr2 = np.log(0.5)\nt2 = 5730\ny2 = np.exp((r2 / t2) * x2)\nx3 = np.arange(0, 21000, 1000)\nr3 = np.log(0.5)\nt31 = 5730\nt32 = 1600\ny31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "r2",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "r2 = np.log(0.5)\nt2 = 5730\ny2 = np.exp((r2 / t2) * x2)\nx3 = np.arange(0, 21000, 1000)\nr3 = np.log(0.5)\nt31 = 5730\nt32 = 1600\ny31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "t2",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "t2 = 5730\ny2 = np.exp((r2 / t2) * x2)\nx3 = np.arange(0, 21000, 1000)\nr3 = np.log(0.5)\nt31 = 5730\nt32 = 1600\ny31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)\nstudent_grades = np.random.normal(68, 15, 50)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "y2",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "y2 = np.exp((r2 / t2) * x2)\nx3 = np.arange(0, 21000, 1000)\nr3 = np.log(0.5)\nt31 = 5730\nt32 = 1600\ny31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)\nstudent_grades = np.random.normal(68, 15, 50)\n# Create a figure with a 3x2 grid",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "x3",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "x3 = np.arange(0, 21000, 1000)\nr3 = np.log(0.5)\nt31 = 5730\nt32 = 1600\ny31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)\nstudent_grades = np.random.normal(68, 15, 50)\n# Create a figure with a 3x2 grid\nfig = plt.figure(figsize=(10, 10))",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "r3",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "r3 = np.log(0.5)\nt31 = 5730\nt32 = 1600\ny31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)\nstudent_grades = np.random.normal(68, 15, 50)\n# Create a figure with a 3x2 grid\nfig = plt.figure(figsize=(10, 10))\nfig.suptitle(\"All in One\", fontsize=\"x-small\")",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "t31",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "t31 = 5730\nt32 = 1600\ny31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)\nstudent_grades = np.random.normal(68, 15, 50)\n# Create a figure with a 3x2 grid\nfig = plt.figure(figsize=(10, 10))\nfig.suptitle(\"All in One\", fontsize=\"x-small\")\n# Plot 1: Line graph of y0",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "t32",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "t32 = 1600\ny31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)\nstudent_grades = np.random.normal(68, 15, 50)\n# Create a figure with a 3x2 grid\nfig = plt.figure(figsize=(10, 10))\nfig.suptitle(\"All in One\", fontsize=\"x-small\")\n# Plot 1: Line graph of y0\nax1 = plt.subplot(3, 2, 1)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "y31",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "y31 = np.exp((r3 / t31) * x3)\ny32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)\nstudent_grades = np.random.normal(68, 15, 50)\n# Create a figure with a 3x2 grid\nfig = plt.figure(figsize=(10, 10))\nfig.suptitle(\"All in One\", fontsize=\"x-small\")\n# Plot 1: Line graph of y0\nax1 = plt.subplot(3, 2, 1)\nax1.plot(range(0, 11), y0, 'r-')",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "y32",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "y32 = np.exp((r3 / t32) * x3)\nnp.random.seed(5)\nstudent_grades = np.random.normal(68, 15, 50)\n# Create a figure with a 3x2 grid\nfig = plt.figure(figsize=(10, 10))\nfig.suptitle(\"All in One\", fontsize=\"x-small\")\n# Plot 1: Line graph of y0\nax1 = plt.subplot(3, 2, 1)\nax1.plot(range(0, 11), y0, 'r-')\nax1.set_title(\"y = x^3\", fontsize=\"x-small\")",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "student_grades",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "student_grades = np.random.normal(68, 15, 50)\n# Create a figure with a 3x2 grid\nfig = plt.figure(figsize=(10, 10))\nfig.suptitle(\"All in One\", fontsize=\"x-small\")\n# Plot 1: Line graph of y0\nax1 = plt.subplot(3, 2, 1)\nax1.plot(range(0, 11), y0, 'r-')\nax1.set_title(\"y = x^3\", fontsize=\"x-small\")\nax1.set_xlabel(\"x\", fontsize=\"x-small\")\nax1.set_ylabel(\"y\", fontsize=\"x-small\")",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "fig = plt.figure(figsize=(10, 10))\nfig.suptitle(\"All in One\", fontsize=\"x-small\")\n# Plot 1: Line graph of y0\nax1 = plt.subplot(3, 2, 1)\nax1.plot(range(0, 11), y0, 'r-')\nax1.set_title(\"y = x^3\", fontsize=\"x-small\")\nax1.set_xlabel(\"x\", fontsize=\"x-small\")\nax1.set_ylabel(\"y\", fontsize=\"x-small\")\n# Plot 2: Scatter plot of x1 vs y1\nax2 = plt.subplot(3, 2, 2)",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "ax1",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "ax1 = plt.subplot(3, 2, 1)\nax1.plot(range(0, 11), y0, 'r-')\nax1.set_title(\"y = x^3\", fontsize=\"x-small\")\nax1.set_xlabel(\"x\", fontsize=\"x-small\")\nax1.set_ylabel(\"y\", fontsize=\"x-small\")\n# Plot 2: Scatter plot of x1 vs y1\nax2 = plt.subplot(3, 2, 2)\nax2.scatter(x1, y1, color='magenta')\nax2.set_title(\"Men's Height vs Weight\", fontsize=\"x-small\")\nax2.set_xlabel(\"Height (in)\", fontsize=\"x-small\")",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "ax1.set_title(\"y",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "ax1.set_title(\"y = x^3\", fontsize=\"x-small\")\nax1.set_xlabel(\"x\", fontsize=\"x-small\")\nax1.set_ylabel(\"y\", fontsize=\"x-small\")\n# Plot 2: Scatter plot of x1 vs y1\nax2 = plt.subplot(3, 2, 2)\nax2.scatter(x1, y1, color='magenta')\nax2.set_title(\"Men's Height vs Weight\", fontsize=\"x-small\")\nax2.set_xlabel(\"Height (in)\", fontsize=\"x-small\")\nax2.set_ylabel(\"Weight (lbs)\", fontsize=\"x-small\")\n# Plot 3: Exponential decay of C-14",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "ax2",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "ax2 = plt.subplot(3, 2, 2)\nax2.scatter(x1, y1, color='magenta')\nax2.set_title(\"Men's Height vs Weight\", fontsize=\"x-small\")\nax2.set_xlabel(\"Height (in)\", fontsize=\"x-small\")\nax2.set_ylabel(\"Weight (lbs)\", fontsize=\"x-small\")\n# Plot 3: Exponential decay of C-14\nax3 = plt.subplot(3, 2, 3)\nax3.plot(x2, y2)\nax3.set_title(\"Exponential Decay of C-14\", fontsize=\"x-small\")\nax3.set_xlabel(\"Time (years)\", fontsize=\"x-small\")",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "ax3",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "ax3 = plt.subplot(3, 2, 3)\nax3.plot(x2, y2)\nax3.set_title(\"Exponential Decay of C-14\", fontsize=\"x-small\")\nax3.set_xlabel(\"Time (years)\", fontsize=\"x-small\")\nax3.set_ylabel(\"Fraction Remaining\", fontsize=\"x-small\")\nax3.set_yscale('log')\n# Plot 4: Exponential decay comparison\nax4 = plt.subplot(3, 2, 4)\nax4.plot(x3, y31, 'r--', label='C-14')\nax4.plot(x3, y32, 'g-', label='Ra-226')",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "ax4",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "ax4 = plt.subplot(3, 2, 4)\nax4.plot(x3, y31, 'r--', label='C-14')\nax4.plot(x3, y32, 'g-', label='Ra-226')\nax4.set_title(\"Exponential Decay of Elements\", fontsize=\"x-small\")\nax4.set_xlabel(\"Time (years)\", fontsize=\"x-small\")\nax4.set_ylabel(\"Fraction Remaining\", fontsize=\"x-small\")\nax4.legend(fontsize=\"x-small\")\n# Plot 5: Histogram of student grades\nax5 = plt.subplot(3, 2, (5, 6))  # Span the last plot across both columns\nax5.hist(student_grades, bins=range(0, 101, 10), edgecolor='black')",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "ax5",
+        "kind": 5,
+        "importPath": "math.plotting.5-all_in_one",
+        "description": "math.plotting.5-all_in_one",
+        "peekOfCode": "ax5 = plt.subplot(3, 2, (5, 6))  # Span the last plot across both columns\nax5.hist(student_grades, bins=range(0, 101, 10), edgecolor='black')\nax5.set_title(\"Project A\", fontsize=\"x-small\")\nax5.set_xlabel(\"Grades\", fontsize=\"x-small\")\nax5.set_ylabel(\"Number of Students\", fontsize=\"x-small\")\n# Adjust spacing to prevent overlap\nplt.tight_layout(rect=[0, 0, 1, 0.95])  # Leaves room for the main title\n# Show the figure\nplt.show()",
+        "detail": "math.plotting.5-all_in_one",
+        "documentation": {}
+    },
+    {
+        "label": "fruit",
+        "kind": 5,
+        "importPath": "math.plotting.6-bars",
+        "description": "math.plotting.6-bars",
+        "peekOfCode": "fruit = np.random.randint(0, 20, (4,3))\n# Fruit categories and colors\nfruit_labels = ['Apples', 'Bananas', 'Oranges', 'Peaches']\ncolors = ['red', 'yellow', '#ff8000', '#ffe5b4']\n# Create the bar plot\nfig, ax = plt.subplots()\n# Stack the bars for each person\nax.bar([0, 1, 2], fruit[0, :], width=0.5, color=colors[0], label=fruit_labels[0])\nax.bar([0, 1, 2], fruit[1, :], width=0.5, bottom=fruit[0, :], color=colors[1], label=fruit_labels[1])\nax.bar([0, 1, 2], fruit[2, :], width=0.5, bottom=fruit[0, :]+fruit[1, :], color=colors[2], label=fruit_labels[2])",
+        "detail": "math.plotting.6-bars",
+        "documentation": {}
+    },
+    {
+        "label": "fruit_labels",
+        "kind": 5,
+        "importPath": "math.plotting.6-bars",
+        "description": "math.plotting.6-bars",
+        "peekOfCode": "fruit_labels = ['Apples', 'Bananas', 'Oranges', 'Peaches']\ncolors = ['red', 'yellow', '#ff8000', '#ffe5b4']\n# Create the bar plot\nfig, ax = plt.subplots()\n# Stack the bars for each person\nax.bar([0, 1, 2], fruit[0, :], width=0.5, color=colors[0], label=fruit_labels[0])\nax.bar([0, 1, 2], fruit[1, :], width=0.5, bottom=fruit[0, :], color=colors[1], label=fruit_labels[1])\nax.bar([0, 1, 2], fruit[2, :], width=0.5, bottom=fruit[0, :]+fruit[1, :], color=colors[2], label=fruit_labels[2])\nax.bar([0, 1, 2], fruit[3, :], width=0.5, bottom=fruit[0, :]+fruit[1, :]+fruit[2, :], color=colors[3], label=fruit_labels[3])\n# Set labels and title",
+        "detail": "math.plotting.6-bars",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "math.plotting.6-bars",
+        "description": "math.plotting.6-bars",
+        "peekOfCode": "colors = ['red', 'yellow', '#ff8000', '#ffe5b4']\n# Create the bar plot\nfig, ax = plt.subplots()\n# Stack the bars for each person\nax.bar([0, 1, 2], fruit[0, :], width=0.5, color=colors[0], label=fruit_labels[0])\nax.bar([0, 1, 2], fruit[1, :], width=0.5, bottom=fruit[0, :], color=colors[1], label=fruit_labels[1])\nax.bar([0, 1, 2], fruit[2, :], width=0.5, bottom=fruit[0, :]+fruit[1, :], color=colors[2], label=fruit_labels[2])\nax.bar([0, 1, 2], fruit[3, :], width=0.5, bottom=fruit[0, :]+fruit[1, :]+fruit[2, :], color=colors[3], label=fruit_labels[3])\n# Set labels and title\nax.set_ylabel('Quantity of Fruit')",
+        "detail": "math.plotting.6-bars",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "math.plotting.create_pca",
+        "description": "math.plotting.create_pca",
+        "peekOfCode": "iris = load_iris()\ndata = iris.data  # Shape (150, 4)\nlabels = iris.target  # Shape (150,)\n# Save as .npz\nnp.savez(\"pca.npz\", data=data, labels=labels)\nprint(\"pca.npz file created successfully!\")",
+        "detail": "math.plotting.create_pca",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "math.plotting.create_pca",
+        "description": "math.plotting.create_pca",
+        "peekOfCode": "data = iris.data  # Shape (150, 4)\nlabels = iris.target  # Shape (150,)\n# Save as .npz\nnp.savez(\"pca.npz\", data=data, labels=labels)\nprint(\"pca.npz file created successfully!\")",
+        "detail": "math.plotting.create_pca",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "math.plotting.create_pca",
+        "description": "math.plotting.create_pca",
+        "peekOfCode": "labels = iris.target  # Shape (150,)\n# Save as .npz\nnp.savez(\"pca.npz\", data=data, labels=labels)\nprint(\"pca.npz file created successfully!\")",
+        "detail": "math.plotting.create_pca",
+        "documentation": {}
+    }
+]
