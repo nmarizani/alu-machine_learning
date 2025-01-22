@@ -36,42 +36,6 @@
     {
         "label": "arr",
         "kind": 5,
-        "importPath": "math.linear_algebra.0-slice_me_up",
-        "description": "math.linear_algebra.0-slice_me_up",
-        "peekOfCode": "arr = [9, 8, 2, 3, 9, 4, 1, 0, 3]\narr1 = arr[:2]  # First two numbers\narr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
-        "detail": "math.linear_algebra.0-slice_me_up",
-        "documentation": {}
-    },
-    {
-        "label": "arr1",
-        "kind": 5,
-        "importPath": "math.linear_algebra.0-slice_me_up",
-        "description": "math.linear_algebra.0-slice_me_up",
-        "peekOfCode": "arr1 = arr[:2]  # First two numbers\narr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
-        "detail": "math.linear_algebra.0-slice_me_up",
-        "documentation": {}
-    },
-    {
-        "label": "arr2",
-        "kind": 5,
-        "importPath": "math.linear_algebra.0-slice_me_up",
-        "description": "math.linear_algebra.0-slice_me_up",
-        "peekOfCode": "arr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
-        "detail": "math.linear_algebra.0-slice_me_up",
-        "documentation": {}
-    },
-    {
-        "label": "arr3",
-        "kind": 5,
-        "importPath": "math.linear_algebra.0-slice_me_up",
-        "description": "math.linear_algebra.0-slice_me_up",
-        "peekOfCode": "arr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
-        "detail": "math.linear_algebra.0-slice_me_up",
-        "documentation": {}
-    },
-    {
-        "label": "arr",
-        "kind": 5,
         "importPath": "math.linear_algebra.14-saddle_up",
         "description": "math.linear_algebra.14-saddle_up",
         "peekOfCode": "arr = [9, 8, 2, 3, 9, 4, 1, 0, 3]\narr1 = arr[:2]  # First two numbers\narr2 = arr[-5:]  # Last five numbers\narr3 = arr[1:6]  # 2nd through 6th numbers\nprint(\"The first two numbers of the array are: {}\".format(arr1))\nprint(\"The last five numbers of the array are: {}\".format(arr2))\nprint(\"The 2nd through 6th numbers of the array are: {}\".format(arr3))",
