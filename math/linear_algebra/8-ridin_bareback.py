@@ -22,7 +22,6 @@ def mat_mul(mat1, mat2):
     """
     # Check if matrix multiplication is possible
     if len(mat1[0]) != len(mat2):  # Number of columns in mat1 must equal
-                                   # number of rows in mat2
         return None
 
     # Perform matrix multiplication
