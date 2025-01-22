@@ -4,7 +4,7 @@
 This module defines a function for adding two arrays element-wise.
 
 Functions:
-    - add_arrays(arr1, arr2): Adds two arrays element-wise and returns a new list.
+    - add_arrays(arr1, arr2): Adds two arrays element-wise & returns new list.
 """
 
 
