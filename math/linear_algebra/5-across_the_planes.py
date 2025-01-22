@@ -22,7 +22,7 @@ def add_matrices2D(mat1, mat2):
         None: If mat1 and mat2 do not have the same shape.
     """
     if len(mat1) != len(mat2) or any(len(row1) != len(row2) for row1,
-    row2 in zip(mat1, mat2)):
+row2 in zip(mat1, mat2)):
         return None
     return [[row1[i] + row2[i] for i in range(len(row1))] for row1,
-    row2 in zip(mat1, mat2)]
+row2 in zip(mat1, mat2)]
