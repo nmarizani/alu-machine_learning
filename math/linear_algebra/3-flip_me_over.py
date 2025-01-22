@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+This module defines a function to calculate the transpose of a 2D matrix.
+
+Functions:
+    - matrix_transpose(matrix): Returns the transpose of a given 2D matrix.
+"""
+
 def matrix_transpose(matrix):
     """Returns the transpose of a 2D matrix.
 
