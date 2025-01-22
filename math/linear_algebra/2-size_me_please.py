@@ -7,6 +7,7 @@ Functions:
     - matrix_shape(matrix): Calculates the shape of a given matrix.
 """
 
+
 def matrix_shape(matrix):
     """Calculates the shape of a matrix
 
