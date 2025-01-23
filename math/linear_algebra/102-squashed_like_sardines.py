@@ -4,7 +4,7 @@
 This module defines a function for concatenating two matrices
 
 Functions:
-    - cat_matrices(mat1, mat2, axis=0): Concatenates two matrices
+    - cat_matrices(mat1, mat2, axis=0): Concatenates two matrices along axis
 """
 
 
@@ -20,20 +20,24 @@ def cat_matrices(mat1, mat2, axis=0):
         list: A new concatenated matrix.
         None: If the matrices cannot be concatenated.
     """
-    if axis == 0:  # Concatenate along the first axis
-        if isinstance(mat1[0], list) != isinstance(mat2[0], list):
-            return None  # Ensure compatibility of nested structures
+    # Check if both inputs are lists
+    if not isinstance(mat1, list) or not isinstance(mat2, list):
+        return None
+
+    # Base case: Concatenate along axis=0 (outermost dimension)
+    if axis == 0:
         return mat1 + mat2
 
+    # Check if dimensions match at the current level
     if len(mat1) != len(mat2):
-        return None  # Matrices must have the same length along the current axi
+        return None
 
-    # Recursive case: Process deeper axes
-    concatenated_matrix = []
+    # Recursive case: Concatenate sublists along deeper axes
+    result = []
     for sub_mat1, sub_mat2 in zip(mat1, mat2):
         concatenated = cat_matrices(sub_mat1, sub_mat2, axis - 1)
         if concatenated is None:
             return None
-        concatenated_matrix.append(concatenated)
+        result.append(concatenated)
 
-    return concatenated_matrix
+    return result
