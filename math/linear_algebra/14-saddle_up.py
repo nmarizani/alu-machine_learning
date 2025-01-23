@@ -1,8 +1,26 @@
 #!/usr/bin/env python3
-arr = [9, 8, 2, 3, 9, 4, 1, 0, 3]
-arr1 = arr[:2]  # First two numbers
-arr2 = arr[-5:]  # Last five numbers
-arr3 = arr[1:6]  # 2nd through 6th numbers
-print("The first two numbers of the array are: {}".format(arr1))
-print("The last five numbers of the array are: {}".format(arr2))
-print("The 2nd through 6th numbers of the array are: {}".format(arr3))
+
+"""
+This module defines a function for performing matrix multiplication on numpy
+arrays.
+
+Functions:
+    - np_matmul(mat1, mat2): Performs matrix multiplication between two numpy
+    arrays.
+"""
+
+import numpy as np
+
+
+def np_matmul(mat1, mat2):
+    """Performs matrix multiplication between two numpy arrays.
+
+    Args:
+        mat1 (numpy.ndarray): The first matrix.
+        mat2 (numpy.ndarray): The second matrix.
+
+    Returns:
+        numpy.ndarray: A new numpy array that is the result of matrix
+        multiplication.
+    """
+    return np.matmul(mat1, mat2)
