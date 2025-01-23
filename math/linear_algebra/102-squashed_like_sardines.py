@@ -20,23 +20,20 @@ def cat_matrices(mat1, mat2, axis=0):
         list: A new concatenated matrix.
         None: If the matrices cannot be concatenated.
     """
-    if not isinstance(mat1, list) or not isinstance(mat2, list):
-        return None
-
-    if axis == 0:
-        # Concatenate along the first axis
-        if len(mat1) != len(mat2):
-            return None
+    if axis == 0:  # Concatenate along the first axis
+        if isinstance(mat1[0], list) != isinstance(mat2[0], list):
+            return None  # Ensure compatibility of nested structures
         return mat1 + mat2
 
     if len(mat1) != len(mat2):
-        return None  # Matrices must have the same length for non-zero
+        return None  # Matrices must have the same length along the current axi
 
-    # Recursively concatenate along deeper axes
-    result = []
-    for row1, row2 in zip(mat1, mat2):
-        concatenated_row = cat_matrices(row1, row2, axis - 1)
-        if concatenated_row is None:
+    # Recursive case: Process deeper axes
+    concatenated_matrix = []
+    for sub_mat1, sub_mat2 in zip(mat1, mat2):
+        concatenated = cat_matrices(sub_mat1, sub_mat2, axis - 1)
+        if concatenated is None:
             return None
-        result.append(concatenated_row)
-    return result
+        concatenated_matrix.append(concatenated)
+
+    return concatenated_matrix
