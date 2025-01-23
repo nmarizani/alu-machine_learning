@@ -18,7 +18,7 @@ def np_slice(matrix, axes={}):
                      representing the slice to apply along that axis.
 
     Returns:
-        numpy.ndarray: A new numpy array after slicing along the specified axes.
+        numpy.ndarray: A new numpy array after slicing along the specified axes
     """
     slices = [slice(None)] * len(matrix.shape)  # Initialize slices for all axe
     for axis, slice_tuple in axes.items():
