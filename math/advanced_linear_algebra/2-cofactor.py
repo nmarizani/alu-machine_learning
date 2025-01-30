@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Module to compute minor matrix of a given square matrix """
+""" Module to compute the cofactor matrix of a square matrix """
 
 
 def determinant(matrix):
@@ -43,31 +43,53 @@ def minor(matrix):
     :param matrix: List of lists representing a square matrix.
     :return: Minor matrix (list of lists).
     """
-    # Validate input type
+    if (not isinstance(matrix, list) or 
+            not all(isinstance(row, list) for row in matrix)):
+        raise TypeError("matrix must be a list of lists")
+
+    rows = len(matrix)
+
+    if rows == 0 or any(len(row) != rows for row in matrix):
+        raise ValueError("matrix must be a non-empty square matrix")
+
+    if rows == 1:
+        return [[1]]
+
+    minor_matrix = []
+    for i in range(rows):
+        row_minors = []
+        for j in range(rows):
+            submatrix = [row[:j] + row[j+1:] for k, row in enumerate(matrix)
+                         if k != i]
+            row_minors.append(determinant(submatrix))
+        minor_matrix.append(row_minors)
+
+    return minor_matrix
+
+
+def cofactor(matrix):
+    """
+    Compute the cofactor matrix of a given square matrix.
+
+    :param matrix: List of lists representing a square matrix.
+    :return: Cofactor matrix (list of lists).
+    """
     if (not isinstance(matrix, list) or
             not all(isinstance(row, list) for row in matrix)):
         raise TypeError("matrix must be a list of lists")
 
     rows = len(matrix)
 
-    # Ensure matrix is square and non-empty
     if rows == 0 or any(len(row) != rows for row in matrix):
         raise ValueError("matrix must be a non-empty square matrix")
 
-    # Fix: Minor matrix of a 1×1 matrix is [[1]]
-    if rows == 1:
-        return [[1]]
+    # Compute minor matrix first
+    minor_matrix = minor(matrix)
 
-    # Compute the minor matrix
-    minor_matrix = []
-    for i in range(rows):
-        row_minors = []
-        for j in range(rows):
-            # Create the submatrix by removing row i and column j
-            submatrix = [row[:j] + row[j+1:] for k, row in enumerate(matrix)
-                         if k != i]
-            # Compute determinant of the submatrix
-            row_minors.append(determinant(submatrix))
-        minor_matrix.append(row_minors)
+    # Apply cofactor formula: C_ij = (-1)^(i+j) * M_ij
+    cofactor_matrix = [
+        [((-1) ** (i + j)) * minor_matrix[i][j] for j in range(rows)]
+        for i in range(rows)
+    ]
 
-    return minor_matrix
+    return cofactor_matrix
