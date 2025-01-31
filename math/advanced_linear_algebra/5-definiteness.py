@@ -6,12 +6,12 @@ import numpy as np
 
 def definiteness(matrix):
     """
-    Compute the definiteness of a square matrix.
+    Compute the definiteness of a square symmetric matrix.
 
     :param matrix: numpy.ndarray representing a square matrix.
     :return: One of the strings: 'Positive definite', 'Positive semi-definite',
              'Negative definite', 'Negative semi-definite', 'Indefinite',
-             or None if the matrix is invalid.
+             or None if the matrix is invalid or not symmetric.
     """
     # Validate input type
     if not isinstance(matrix, np.ndarray):
@@ -20,6 +20,10 @@ def definiteness(matrix):
     # Validate matrix shape
     if matrix.ndim != 2 or matrix.shape[0] != matrix.shape[1]:
         return None  # Not a valid square matrix
+
+    # Check if matrix is symmetric (A == A^T)
+    if not np.allclose(matrix, matrix.T):
+        return None  # Matrix is not symmetric
 
     # Compute eigenvalues
     eigenvalues = np.linalg.eigvals(matrix)
