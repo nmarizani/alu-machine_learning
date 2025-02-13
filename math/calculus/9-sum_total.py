@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def summation_i_squared(n):
     # Check if n is a valid integer and non-negative
     if not isinstance(n, int) or n < 0:
