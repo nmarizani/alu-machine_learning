@@ -4,8 +4,8 @@ def poly_derivative(poly):
     """
     Calculates the derivative of a polynomial.
 
-    The input list represents the polynomial's coefficients, where the index 
-    corresponds to the power of x.
+    The input list represents the polynomial's coefficients, where the index
+    corresponds to the power of x
 
     Args:
         poly (list): A list of coefficients representing the polynomial.
@@ -13,9 +13,9 @@ def poly_derivative(poly):
     Returns:
         list: A new list of coefficients representing the derivative.
         None: If poly is not a valid list of coefficients.
-    
+
     Example:
-        poly_derivative([5, 3, 0, 1]) -> [3, 0, 3] 
+        poly_derivative([5, 3, 0, 1]) -> [3, 0, 3]
         (Derivative of x^3 + 3x + 5)
     """
     # Validate input: must be a non-empty list of numbers
