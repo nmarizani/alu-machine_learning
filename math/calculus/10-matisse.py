@@ -1,11 +1,29 @@
 #!/usr/bin/env python3
 
 def poly_derivative(poly):
-    # Check if poly is a valid list of coefficients
+    """
+    Calculates the derivative of a polynomial.
+
+    The input list represents the polynomial's coefficients, where the index 
+    corresponds to the power of x.
+
+    Args:
+        poly (list): A list of coefficients representing the polynomial.
+
+    Returns:
+        list: A new list of coefficients representing the derivative.
+        None: If poly is not a valid list of coefficients.
+    
+    Example:
+        poly_derivative([5, 3, 0, 1]) -> [3, 0, 3] (Derivative of x^3 + 3x + 5)
+    """
+    # Validate input: must be a non-empty list of numbers
     if not isinstance(poly, list) or not all(isinstance(c, (int, float)) for c in poly):
         return None
-    # If the polynomial is constant (or empty), return [0]
-    if len(poly) <= 1:
+
+    # If polynomial is constant (degree 0), its derivative is 0
+    if len(poly) == 1:
         return [0]
-    # Compute the derivative: multiply each coefficient by its index (power of x) and exclude the constant term
-    return [i * poly[i] for i in range(1, len(poly))]
+
+    # Compute the derivative: multiply each coefficient by its power and shift left
+    return [poly[i] * i for i in range(1, len(poly))]
