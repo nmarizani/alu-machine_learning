@@ -15,15 +15,19 @@ def poly_derivative(poly):
         None: If poly is not a valid list of coefficients.
     
     Example:
-        poly_derivative([5, 3, 0, 1]) -> [3, 0, 3] (Derivative of x^3 + 3x + 5)
+        poly_derivative([5, 3, 0, 1]) -> [3, 0, 3] 
+        (Derivative of x^3 + 3x + 5)
     """
     # Validate input: must be a non-empty list of numbers
-    if not isinstance(poly, list) or not all(isinstance(c, (int, float)) for c in poly):
+    if (not isinstance(poly, list) or len(poly) == 0 or
+            not all(isinstance(c, (int, float)) for c in poly)):
         return None
 
-    # If polynomial is constant (degree 0), its derivative is 0
+    # If polynomial is constant (degree 0), its derivative is [0]
     if len(poly) == 1:
         return [0]
 
     # Compute the derivative: multiply each coefficient by its power and shift left
-    return [poly[i] * i for i in range(1, len(poly))]
+    derivative = [poly[i] * i for i in range(1, len(poly))]
+
+    return derivative if derivative else [0]
