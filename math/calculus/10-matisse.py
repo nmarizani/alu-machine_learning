@@ -27,7 +27,7 @@ def poly_derivative(poly):
     if len(poly) == 1:
         return [0]
 
-    # Compute the derivative: multiply each coefficient by its power and shift left
+    # Compute the derivative: multiply each coefficient by its power and shift
     derivative = [poly[i] * i for i in range(1, len(poly))]
 
     return derivative if derivative else [0]
