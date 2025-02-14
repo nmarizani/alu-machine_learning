@@ -13,7 +13,7 @@ def poly_integral(poly, C=0):
 
     Returns:
         list: A new list of coefficients representing the integral.
-        None: If poly or C is invalid.
+        None: If poly is invalid or C is not an integer.
 
     Example:
         poly_integral([5, 3, 0, 1]) -> [0, 5, 1.5, 0, 0.25]
@@ -32,10 +32,11 @@ def poly_integral(poly, C=0):
     integral = [C] + [poly[i] / (i + 1) for i in range(len(poly))]
 
     # Convert whole numbers to integers
-    integral = [int(c) if c.is_integer() else c for c in integral]
+    integral = [int(c) if isinstance(c, float) and c.is_integer() else c
+                for c in integral]
 
-    # Remove trailing zeros (but keep one if the result is just [0])
-    while len(integral) > 1 and integral[-1] == 0:
-        integral.pop()
+    # If the original poly was [0], return [C] instead of [C, 0]
+    if all(c == 0 for c in poly):
+        return [C]
 
     return integral
