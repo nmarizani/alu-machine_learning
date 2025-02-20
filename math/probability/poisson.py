@@ -15,7 +15,7 @@ class Poisson:
 
         Parameters:
         - data (list, optional): List of data points to estimate lambtha.
-        - lambtha (float): Expected number of occurrences in a given time frame
+        - lambtha (float): Expected number of occurrences in a given time frame.
 
         Raises:
         - TypeError: If data is not a list.
@@ -53,6 +53,30 @@ class Poisson:
         k = int(k)  # Convert k to an integer if it's a float
         return ((self.lambtha ** k) * (2.7182818285 ** -self.lambtha) /
                 self._factorial(k))
+
+    def cdf(self, k):
+        """
+        Calculates the cumulative distribution function (CDF) for a given
+        number of occurrences.
+
+        Parameters:
+        - k (int or float): The number of occurrences.
+
+        Returns:
+        - float: The CDF value for k.
+
+        Notes:
+        - If k is a float, it is converted to an integer.
+        - If k is negative, returns 0 since probabilities cannot be negative.
+        - The CDF is the sum of PMFs from 0 to k.
+        """
+        if k < 0:
+            return 0
+        k = int(k)  # Convert k to an integer if it's a float
+        cdf_value = 0
+        for i in range(k + 1):
+            cdf_value += self.pmf(i)
+        return cdf_value
 
     def _factorial(self, n):
         """
