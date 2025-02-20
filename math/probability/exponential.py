@@ -48,3 +48,18 @@ class Exponential:
         if x < 0:
             return 0
         return self.lambtha * (2.7182818285 ** (-self.lambtha * x))
+
+    def cdf(self, x):
+        """
+        Calculates the cumulative distribution function (CDF) for a given time
+
+        Parameters:
+        - x (float): The time period.
+
+        Returns:
+        - float: The cumulative probability up to x.
+        - Returns 0 if x is negative (out of range).
+        """
+        if x < 0:
+            return 0
+        return 1 - (2.7182818285 ** (-self.lambtha * x))
