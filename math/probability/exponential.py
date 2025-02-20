@@ -33,3 +33,19 @@ class Exponential:
                 raise ValueError("data must contain multiple values")
             # Estimate lambtha as the reciprocal of the mean
             self.lambtha = float(1 / (sum(data) / len(data)))
+
+    def pdf(self, x):
+        """
+        Calculates the probability density function (PDF) for a given time
+
+        Parameters:
+        - x (float): The time period.
+
+        Returns:
+        - float: The probability density function value at x.
+        - Returns 0 if x is negative (out of range).
+        """
+        if x < 0:
+            return 0
+        return self.lambtha * (2.7182818285 ** (-self.lambtha * x))
+
