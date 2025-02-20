@@ -2,15 +2,20 @@
 
 
 class Poisson:
-    """Represents a Poisson distribution"""
+    """
+    Represents a Poisson distribution.
+
+    Attributes:
+    - lambtha (float): Expected number of occurrences in a given time frame.
+    """
 
     def __init__(self, data=None, lambtha=1.):
         """
-        Initializes a Poisson distribution
+        Initializes a Poisson distribution.
 
         Parameters:
         - data (list, optional): List of data points to estimate lambtha.
-        - lambtha (float): Expected number of occurrences in a given time frame
+        - lambtha (float): Expected number of occurrences in a given time frame.
 
         Raises:
         - TypeError: If data is not a list.
@@ -27,3 +32,41 @@ class Poisson:
             if len(data) < 2:
                 raise ValueError("data must contain multiple values")
             self.lambtha = float(sum(data) / len(data))  # Estimate lambtha
+
+    def pmf(self, k):
+        """
+        Calculates the probability mass function (PMF) for a given number of 
+        occurrences.
+
+        Parameters:
+        - k (int or float): The number of occurrences.
+
+        Returns:
+        - float: The PMF value for k.
+
+        Notes:
+        - If k is a float, it is converted to an integer.
+        - If k is negative, returns 0 since probabilities cannot be negative.
+        """
+        if k < 0:
+            return 0
+        k = int(k)  # Convert k to an integer if it's a float
+        return ((self.lambtha ** k) * (2.7182818285 ** -self.lambtha) /
+                self._factorial(k))
+
+    def _factorial(self, n):
+        """
+        Computes the factorial of a given number.
+
+        Parameters:
+        - n (int): The number for which factorial is computed.
+
+        Returns:
+        - int: The factorial of n.
+        """
+        if n == 0 or n == 1:
+            return 1
+        fact = 1
+        for i in range(2, n + 1):
+            fact *= i
+        return fact
