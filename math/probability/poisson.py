@@ -15,7 +15,7 @@ class Poisson:
 
         Parameters:
         - data (list, optional): List of data points to estimate lambtha.
-        - lambtha (float): Expected number of occurrences in a given time frame.
+        - lambtha (float): Expected number of occurrences in a given time frame
 
         Raises:
         - TypeError: If data is not a list.
@@ -35,7 +35,7 @@ class Poisson:
 
     def pmf(self, k):
         """
-        Calculates the probability mass function (PMF) for a given number of 
+        Calculates the probability mass function (PMF) for a given number of
         occurrences.
 
         Parameters:
