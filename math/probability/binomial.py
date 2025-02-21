@@ -45,7 +45,7 @@ class Binomial:
 
     def pmf(self, k):
         """
-        Calculates the Probability Mass Function (PMF) for a given number of successes k.
+        Calculates the Probability Mass Function (PMF)
         """
         k = int(k)  # Convert k to an integer if it's not
 
@@ -61,3 +61,20 @@ class Binomial:
 
         # Compute PMF: P(k) = C(n, k) * p^k * (1 - p)^(n - k)
         return comb * (self.p ** k) * ((1 - self.p) ** (self.n - k))
+
+    def cdf(self, k):
+        """
+        Calculates the Cumulative Distribution Function
+        """
+        k = int(k)  # Convert k to an integer if it's not
+
+        if k < 0:
+            return 0  # If k is out of range, return 0
+        if k > self.n:
+            return 1  # If k exceeds n, return 1 since it's the sum
+
+        cumulative_prob = 0
+        for i in range(k + 1):
+            cumulative_prob += self.pmf(i)
+
+        return cumulative_prob
