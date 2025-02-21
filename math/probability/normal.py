@@ -72,7 +72,7 @@ class Normal:
 
     def pdf(self, x):
         """
-        Calculates the probability density function (PDF) value
+        Calculates the probability density function (PDF) value 
         for a given x-value.
 
         Parameters:
@@ -84,6 +84,13 @@ class Normal:
         Formula:
         PDF(x) = (1 / (σ * sqrt(2π))) * e^(-(x - μ)^2 / (2σ^2))
         """
-        coefficient = 1 / (self.stddev * math.sqrt(2 * math.pi))
-        exponent = math.exp(-((x - self.mean) ** 2) / (2 * self.stddev ** 2))
+        pi = 3.1415926536  # Approximate value of π
+        e = 2.7182818285  # Approximate value of Euler's number
+       
+        # Compute the coefficient part (1 / (σ * sqrt(2π)))
+        coefficient = 1 / (self.stddev * (2 * pi) ** 0.5)
+
+        # Compute the exponent part (e^(-(x - μ)^2 / (2σ^2)))
+        exponent = e ** (-((x - self.mean) ** 2) / (2 * self.stddev ** 2))
+
         return coefficient * exponent
