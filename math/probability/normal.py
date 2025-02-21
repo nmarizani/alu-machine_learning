@@ -99,8 +99,8 @@ class Normal:
         """
         Approximates the error function (erf) using a numerical approximation.
 
-        Formula: 
-        erf(z) ≈ (2 / sqrt(π)) * [ z - (z^3 / 3) + (z^5 / 10) 
+        Formula:
+        erf(z) ≈ (2 / sqrt(π)) * [ z - (z^3 / 3) + (z^5 / 10)
         - (z^7 / 42) + (z^9 / 216) ]
         """
         pi = 3.1415926536
@@ -109,7 +109,7 @@ class Normal:
         term3 = (z ** 5) / 10
         term4 = -(z ** 7) / 42
         term5 = (z ** 9) / 216
-        
+
         return (2 / (pi ** 0.5)) * (term1 + term2 + term3 + term4 + term5)
 
     def cdf(self, x):
