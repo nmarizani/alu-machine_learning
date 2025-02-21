@@ -35,7 +35,7 @@ class Binomial:
             self.p = mean / self.n
 
     def factorial(self, num):
-        """Computes factorial of a number (num!) without importing math module."""
+        """Computes factorial of a number (num!) without using math module."""
         if num == 0 or num == 1:
             return 1
         result = 1
@@ -45,12 +45,12 @@ class Binomial:
 
     def pmf(self, k):
         """
-        Calculates the Probability Mass Function (PMF) for given number success
+        Calculates the Probability Mass Function (PMF) for a given number of successes k.
         """
         k = int(k)  # Convert k to an integer if it's not
 
         if k < 0 or k > self.n:
-            return 0  # k is out of range
+            return 0  # If k is out of range, return 0
 
         # Compute binomial coefficient: C(n, k) = n! / (k!(n-k)!)
         n_fact = self.factorial(self.n)
