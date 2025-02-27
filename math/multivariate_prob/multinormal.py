@@ -59,4 +59,4 @@ class MultiNormal:
         # Compute exponent: (x - mean)^T * inv_cov * (x - mean)
         exponent = -0.5 * np.dot(diff.T, np.dot(inv_cov, diff))
 
-        return float(norm_factor * np.exp(exponent))  # Convert to float
+        return float(f"{norm_factor * np.exp(exponent):.18f}")  # Convert-float
