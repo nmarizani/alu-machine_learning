@@ -53,7 +53,7 @@ class MultiNormal:
         det_cov = np.linalg.det(self.cov)  # Determinant of covariance matrix
         inv_cov = np.linalg.inv(self.cov)  # Inverse of covariance matrix
 
-        norm_factor = 1 / np.sqrt(((2 * np.pi) ** d) * det_cov)  #Normalization
+        norm_factor = 1 / np.sqrt(((2 * np.pi) ** d) * det_cov) # Normalization
         diff = x - self.mean  # Centered x
 
         # Compute exponent: (x - mean)^T * inv_cov * (x - mean)
