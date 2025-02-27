@@ -3,38 +3,8 @@
 import numpy as np
 
 
-def gamma_function(n):
-    """Computes the Gamma function using factorial (since Gamma(n) = (n-1)! for integers)."""
-    return np.math.factorial(n - 1) if n > 0 else 1
-
-
-def beta_function(a, b):
-    """Computes the Beta function B(a, b) using Gamma functions."""
-    return gamma_function(a) * gamma_function(b) / gamma_function(a + b)
-
-
-def incomplete_beta(x, a, b, terms=1000):
-    """Approximates the incomplete Beta function using a numerical sum.
-
-    Args:
-        x (float): Upper bound for integration.
-        a (int): Alpha parameter of the Beta distribution.
-        b (int): Beta parameter of the Beta distribution.
-        terms (int): Number of terms in the series approximation.
-
-    Returns:
-        float: Approximate value of the incomplete Beta function.
-    """
-    total = 0
-    for k in range(terms):
-        numerator = np.math.factorial(a + b - 1) * (x ** (a + k)) * ((1 - x) ** (b - 1 - k))
-        denominator = np.math.factorial(k) * np.math.factorial(a + b - 1 - k) * (a + k)
-        total += numerator / denominator
-    return total
-
-
 def beta_cdf(x, a, b):
-    """Computes the Beta cumulative distribution function (CDF).
+    """Computes an approximation of the Beta cumulative distribution function (CDF).
 
     Args:
         x (float): The upper bound for the CDF.
@@ -44,7 +14,19 @@ def beta_cdf(x, a, b):
     Returns:
         float: CDF value at x.
     """
-    return incomplete_beta(x, a, b) / beta_function(a, b)
+    # Series expansion for the incomplete Beta function
+    total = 0
+    term = 1
+    k = 0
+
+    while term > 1e-10:  # Continue until convergence
+        term = (np.math.factorial(a + b - 1) / 
+                (np.math.factorial(k) * np.math.factorial(a + b - 1 - k))) \
+               * (x ** (a + k)) * ((1 - x) ** (b - 1 - k)) / (a + k)
+        total += term
+        k += 1
+
+    return total
 
 
 def posterior(x, n, p1, p2):
