@@ -2,7 +2,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-convolve_grayscale_valid = __import__('0-convolve_grayscale_valid.py').convolve_grayscale_valid
+convolve_grayscale_valid = __import__('0-convolve_grayscale_valid').convolve_grayscale_valid
 
 
 if __name__ == '__main__':
