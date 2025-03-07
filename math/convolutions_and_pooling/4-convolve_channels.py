@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-"""Module that performs a convolution on images with channels."""
-
 import numpy as np
 
 
