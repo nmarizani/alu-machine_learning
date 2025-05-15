@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env python3
 """Script to download and save the MNIST dataset in NPZ format."""
 
@@ -11,3 +12,18 @@ import numpy as np
 np.savez('../../supervised_learning/data/MNIST.npz', X_train=x_train)
 
 print("MNIST.npz has been saved successfully!")
+=======
+#!/usr/bin/env python3
+"""Script to download and save the MNIST dataset in NPZ format."""
+
+from keras.datasets import mnist
+import numpy as np
+
+# Load MNIST dataset
+(x_train, _), (_, _) = mnist.load_data()
+
+# Save only X_train in MNIST.npz
+np.savez('../../supervised_learning/data/MNIST.npz', X_train=x_train)
+
+print("MNIST.npz has been saved successfully!")
+>>>>>>> 816708ef0843428e7626af3ab4703ec1afdc1d2f
