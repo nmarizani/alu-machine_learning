@@ -1,21 +1,11 @@
 #!/usr/bin/env python3
-"""Defines a deep neural network performing binary classification"""
-
 import numpy as np
 
 
 class DeepNeuralNetwork:
-    """Deep Neural Network for binary classification"""
+    """Defines a deep neural network performing binary classification"""
 
     def __init__(self, nx, layers):
-        """
-        Constructor for DeepNeuralNetwork
-
-        Parameters:
-        - nx: number of input features
-        - layers: list representing the number of nodes in each layer
-        """
-
         # Validate nx
         if not isinstance(nx, int):
             raise TypeError("nx must be an integer")
@@ -25,25 +15,22 @@ class DeepNeuralNetwork:
         # Validate layers
         if not isinstance(layers, list) or len(layers) == 0:
             raise TypeError("layers must be a list of positive integers")
-        if not all(isinstance(nodes, int) and nodes > 0 for nodes in layers):
+        if not all(isinstance(n, int) and n > 0 for n in layers):
             raise TypeError("layers must be a list of positive integers")
 
-        self.L = len(layers)
-        self.cache = {}
-        self.weights = {}
+        self.nx = nx
+        self.L = len(layers)           # Number of layers
+        self.cache = {}                # To store intermediate values
+        self.weights = {}              # To store weights and biases
 
         for l in range(1, self.L + 1):
             layer_size = layers[l - 1]
-
             if l == 1:
-                prev_layer_size = nx
+                he_init = np.sqrt(2 / nx)
+                self.weights['W1'] = np.random.randn(layer_size, nx) * he_init
             else:
                 prev_layer_size = layers[l - 2]
+                he_init = np.sqrt(2 / prev_layer_size)
+                self.weights[f'W{l}'] = np.random.randn(layer_size, prev_layer_size) * he_init
 
-            # He et al. initialization for weights
-            self.weights[f"W{l}"] = (
-                np.random.randn(layer_size, prev_layer_size) *
-                np.sqrt(2 / prev_layer_size)
-            )
-            # Initialize biases to zeros
-            self.weights[f"b{l}"] = np.zeros((layer_size, 1))
+            self.weights[f'b{l}'] = np.zeros((layer_size, 1))
