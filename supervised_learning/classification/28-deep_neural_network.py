@@ -91,4 +91,4 @@ class DeepNeuralNetwork:
     
     # Other methods unchanged (e.g., cost, evaluate, train)
 
-    # You should keep cost and evaluate as in previous solution
+    # You should keep cost and evaluate as in previous solution to handle multiclass softmax
