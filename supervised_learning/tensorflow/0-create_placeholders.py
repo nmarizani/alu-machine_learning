@@ -7,7 +7,7 @@ import tensorflow as tf
 def create_placeholders(nx, classes):
     """
     Creates placeholders for a neural network.
-    
+
     Args:
         nx (int): number of input features
         classes (int): number of output classes
