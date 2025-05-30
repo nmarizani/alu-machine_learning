@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gradient Descent with L2 Regularization for a Neural Network using tanh and softmax activations.
+Gradient Descent with L2 Regularization for a Neural Network
 """
 
 import numpy as np
