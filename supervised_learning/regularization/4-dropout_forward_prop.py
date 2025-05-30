@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Conducts forward propagation using Dropout.
+Forward propagation with Dropout regularization.
 """
 
 import numpy as np
@@ -11,34 +11,37 @@ def dropout_forward_prop(X, weights, L, keep_prob):
     Conducts forward propagation using Dropout.
 
     Parameters:
-    - X: numpy.ndarray of shape (nx, m) with input data
-    - weights: dictionary of weights and biases
+    - X: numpy.ndarray of shape (nx, m), input data
+    - weights: dictionary of weights and biases of the neural network
     - L: number of layers in the network
     - keep_prob: probability that a node will be kept
 
     Returns:
-    - cache: dictionary containing outputs and dropout masks
+    - cache: dictionary containing outputs of each layer and dropout masks
     """
-    cache = {'A0': X}
+    cache = {}
+    cache['A0'] = X
 
     for l in range(1, L + 1):
-        W = weights['W' + str(l)]
-        b = weights['b' + str(l)]
+        Wl = weights['W' + str(l)]
+        bl = weights['b' + str(l)]
         A_prev = cache['A' + str(l - 1)]
 
-        Z = np.matmul(W, A_prev) + b
+        Zl = np.matmul(Wl, A_prev) + bl
 
-        if l != L:
-            A = np.tanh(Z)
-            D = np.random.rand(A.shape[0], A.shape[1]) < keep_prob
-            A *= D
-            A /= keep_prob
-            cache['D' + str(l)] = D
+        if l == L:
+            # Softmax for the output layer
+            exp_Z = np.exp(Zl - np.max(Zl, axis=0, keepdims=True))
+            Al = exp_Z / np.sum(exp_Z, axis=0, keepdims=True)
+            cache['A' + str(l)] = Al
         else:
-            # Softmax for the last layer
-            exp_Z = np.exp(Z - np.max(Z, axis=0, keepdims=True))
-            A = exp_Z / np.sum(exp_Z, axis=0, keepdims=True)
-
-        cache['A' + str(l)] = A
+            # tanh activation
+            Al = np.tanh(Zl)
+            # Dropout mask
+            Dl = np.random.rand(*Al.shape) < keep_prob
+            Al *= Dl
+            Al /= keep_prob
+            cache['A' + str(l)] = Al
+            cache['D' + str(l)] = Dl
 
     return cache
