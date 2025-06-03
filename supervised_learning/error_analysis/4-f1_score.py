@@ -12,7 +12,7 @@ def f1_score(confusion):
 
     Parameters:
     confusion (numpy.ndarray): Confusion matrix of shape (classes, classes)
-                               where rows are actual labels and columns are predictions.
+    where rows are actual labels and columns are predictions.
 
     Returns:
     numpy.ndarray: Array of shape (classes,) with F1 score for each class.
