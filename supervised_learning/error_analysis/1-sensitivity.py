@@ -10,7 +10,7 @@ def sensitivity(confusion):
 
     Parameters:
     confusion (numpy.ndarray): Confusion matrix of shape (classes, classes)
-                               where rows are actual labels and columns are predictions.
+    where rows are actual labels and columns are predictions.
 
     Returns:
     numpy.ndarray: Array of shape (classes,) with sensitivity for each class.
