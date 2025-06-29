@@ -1,40 +1,41 @@
 #!/usr/bin/env python3
-"""Module to get ships that can carry a given number of passengers."""
+"""Module to get available ships based on passenger capacity."""
 
 import requests
-import re
 
 
 def availableShips(passengerCount):
     """
-    Returns a list of starships that can carry at least `passengerCount`.
+    Returns a list of starships from the SWAPI that can carry
+    at least the given number of passengers.
 
     Args:
-        passengerCount (int): Minimum required passenger capacity.
+        passengerCount (int): Required passenger capacity.
 
     Returns:
-        list: Names of qualifying starships.
+        list: List of starship names meeting the requirement.
     """
     url = "https://swapi.dev/api/starships/"
     ships = []
 
     while url:
-        response = requests.get(url)
-        if response.status_code != 200:
+        try:
+            response = requests.get(url)
+            data = response.json()
+        except Exception:
             break
 
-        data = response.json()
         results = data.get('results', [])
 
         for ship in results:
-            passenger_str = ship.get('passengers', '0').replace(',', '')
-
-            # Skip if not a clean integer (e.g., "n/a", "20-50", "unknown")
-            if not re.fullmatch(r'\d+', passenger_str):
+            raw_passengers = ship.get('passengers', '0')
+            cleaned = raw_passengers.replace(',', '').replace('unknown', '0')
+            try:
+                num = int(cleaned)
+                if num >= passengerCount:
+                    ships.append(ship.get('name'))
+            except ValueError:
                 continue
-
-            if int(passenger_str) >= passengerCount:
-                ships.append(ship.get('name'))
 
         url = data.get('next')
 
