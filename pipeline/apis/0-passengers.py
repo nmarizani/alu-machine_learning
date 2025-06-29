@@ -10,26 +10,29 @@ def availableShips(passengerCount):
     at least the given number of passengers.
 
     Args:
-        passengerCount (int): The required number of passengers.
+        passengerCount (int): Required passenger capacity.
 
     Returns:
-        list: List of ship names that meet the requirement.
+        list: List of starship names meeting the requirement.
     """
     url = "https://swapi.dev/api/starships/"
     ships = []
 
     while url:
-        response = requests.get(url)
-        if response.status_code != 200:
+        try:
+            response = requests.get(url)
+            data = response.json()
+        except Exception:
             break
 
-        data = response.json()
         results = data.get('results', [])
 
         for ship in results:
-            passengers = ship.get('passengers', '0').replace(',', '').replace('unknown', '0')
+            raw_passengers = ship.get('passengers', '0')
+            cleaned = raw_passengers.replace(',', '').replace('unknown', '0')
             try:
-                if int(passengers) >= passengerCount:
+                num = int(cleaned)
+                if num >= passengerCount:
                     ships.append(ship.get('name'))
             except ValueError:
                 continue
