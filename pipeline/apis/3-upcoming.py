@@ -40,7 +40,7 @@ def get_upcoming_launch():
         local_date = date_obj.astimezone().isoformat()
 
         # Fetch rocket name
-       rocket_url = "https://api.spacexdata.com/v4/rockets/{}".format(rocket_id)
+        rocket_url = "https://api.spacexdata.com/v4/rockets/{}".format(rocket_id)
         rocket = requests.get(rocket_url).json()
         rocket_name = rocket.get("name", "Unknown Rocket")
 
