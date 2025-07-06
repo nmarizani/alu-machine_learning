@@ -1,12 +1,17 @@
+-- Drop procedure if it already exists to prevent errors
+DROP PROCEDURE IF EXISTS ComputeAverageScoreForUser;
+
 DELIMITER $$
 
-CREATE PROCEDURE ComputeAverageScoreForUser(IN in_user_id INT)
+-- Create the procedure
+CREATE PROCEDURE ComputeAverageScoreForUser (
+    IN in_user_id INT
+)
 BEGIN
     DECLARE avg_score FLOAT;
 
-    -- Compute the average score for the given user
-    SELECT AVG(score)
-    INTO avg_score
+    -- Calculate the average score from corrections for the user
+    SELECT AVG(score) INTO avg_score
     FROM corrections
     WHERE user_id = in_user_id;
 
